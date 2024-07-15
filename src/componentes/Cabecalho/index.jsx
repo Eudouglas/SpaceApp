@@ -1,4 +1,4 @@
-import { styled } from "styled-components"
+import styled from "styled-components"
 import CampoTexto from "../CampoTexto"
 
 const HeaderEstilizado = styled.header`
@@ -7,14 +7,14 @@ const HeaderEstilizado = styled.header`
     justify-content: space-between;
     img {
         max-width: 212px;
-    }
+    } // Dentro do header, qualquer imagem terá 212px.
 `
 
 const Cabecalho = () => {
-    return (<HeaderEstilizado>
+    return ( <HeaderEstilizado>
         <img src="/imagens/logo.png" alt="" />
         <CampoTexto />
-    </HeaderEstilizado>)
+    </ HeaderEstilizado>)
 }
 
 export default Cabecalho
